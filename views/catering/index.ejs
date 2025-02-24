@@ -1,0 +1,11 @@
+<h1>Available Catering Services</h1>
+<ul>
+  <% caterings.forEach(catering => { %>
+    <li>
+      <h2><%= catering.name %></h2>
+      <p><%= catering.description %></p>
+      <img src="<%= catering.image %>" alt="<%= catering.name %>" width="200">
+      <a href="/catering/<%= catering._id %>">View Details</a>
+    </li>
+  <% }) %>
+</ul>
